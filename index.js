@@ -12,7 +12,7 @@ createConfigFile();
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
-bot.start((ctx) => ctx.reply('Welcome'));
+bot.start((ctx) => ctx.reply('Bienvenido, envia el enlace o nombre de la cancion que quieres descargar'));
 
 bot.on('message', async (ctx) => {
     let text = ctx.message.text;
